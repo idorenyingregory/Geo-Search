@@ -1,6 +1,5 @@
-const one = 'one';
+const submit = document.getElementById('submit-btn');
 
-function returnOne() {
-  return one;
-}
-returnOne();
+submit.addEventListener('click', ($event) => {
+  $event.preventDefault();
+});

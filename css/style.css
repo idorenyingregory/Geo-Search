@@ -1,9 +1,11 @@
 body{
-    margin: 0;
-    padding: 0;
+    background-image: url(/ciel-nuages-fond-ville-dans-style-plat/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
-    background-color: #fff;
 }
 ul{
     list-style-type: none;
@@ -12,26 +14,47 @@ ul{
 }
 li a{
     text-decoration: none;
+    color: rgb(83, 104, 161);
+    background-color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    font-size: medium;
+    font-weight: bold;
 }
 li:nth-child(1){
     font-family: 'Courgette', cursive;
     font-size: 50px;
+    color: rgb(255, 255, 255);
 }
 li:nth-child(2){
-    margin-left: 600px;
-
-}
-li:nth-child(3){
     margin-right: 100px;
+    padding-top: 20px;
 }
-
 .search_city{
-    float: right;
+    margin: 150px 50% 0px 50%;
+}
+#search{
+    height: 40px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: rgb(235, 233, 233);
+    box-shadow: none;
+    border-style: 1px solid black;
+}
+#search::placeholder{
+    text-align: center;
+    font-size: 1rem;
+}
+#submit-btn{
+    margin-left: 100px;
+}
+footer{
+    margin-bottom: auto;
 }
 
 
 
 
+/* Media queries for Mobile devices */
 
 @media screen and (max-width: 740px){
     ul{
@@ -44,18 +67,18 @@ li:nth-child(3){
     }
     li:nth-child(1){
         font-size: 30px;
-        text-align: center;
     }
     li:nth-child(2){
-        margin-left: 0px;
         text-align: center;
-        float: right;
-        padding-right: 60px;
-        
+        float: left;
+        padding-right: 0px;   
     }
-    li:nth-child(3){
-        float: right;
-        text-align: center;
-        padding-right: 150px;
+    .search_city{
+        margin: 60px 100px;
     }
+    #search{
+        width: 300px;
+        margin-top: 110px;
+    }
+
 }
