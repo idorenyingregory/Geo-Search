@@ -18,7 +18,8 @@
         ],
         "linebreak-style": [
             "error",
-            "windows"
+            "windows",
+            0
         ],
         "quotes": [
             "error",
